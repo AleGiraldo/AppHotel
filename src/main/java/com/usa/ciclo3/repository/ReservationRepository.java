@@ -40,7 +40,7 @@ public class ReservationRepository {
     }
     
     public void delReservation(Reservation reservation){
-        reservationCrudRepository.save(reservation);
+        reservationCrudRepository.delete(reservation);
     }
     
     public List<Reservation> getReservationByStatus(String status){
